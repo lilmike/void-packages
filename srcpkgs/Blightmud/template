@@ -1,0 +1,15 @@
+# Template file for 'Blightmud'
+pkgname=Blightmud
+version=3.4.1
+revision=1
+wrksrc="${pkgname}-${version}"
+build_style=cargo
+configure_args="--all-features"
+hostmakedepends="pkg-config"
+makedepends="alsa-lib-devel openssl-devel libclang clang speech-dispatcher-devel"
+short_desc="Console mud client with lua scripting"
+maintainer="Michael Taboada <voidpkgs@forwardme.email>"
+license="GPL-3.0-or-later"
+homepage="https://github.com/Blightmud/Blightmud"
+distfiles="${homepage}/archive/v${version}.tar.gz"
+checksum=cb949eaad83666129aaf263255812ea3fdf15ae406e52ffc02142bd917acded6
